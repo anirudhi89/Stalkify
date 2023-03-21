@@ -4,6 +4,8 @@ const app = express()
 
 
 // app.use() --> set root name
+app.use(express.static(__dirname + '/public'));
+
 
 
 app.get('/', (req, res) => {
@@ -11,8 +13,27 @@ app.get('/', (req, res) => {
 })
 
 
+app.get('/getmusic', async (req, res) => {
+    const sp_dc = req.query.spdc;
+    // res.send({
+    //   'apikey': sp_dc,
+    // });
+    res.send( await getActivityDriver(sp_dc));
+})
+
 
 
 app.listen(port, function() {
-    console.log(`running on local host at port ${port}`)
+    console.log(`Running on local host at port ${port}`)
 })
+
+// HELPER FUCNTIONS
+const buddyList = require('./spotify.js')
+async function getActivityDriver (spdcKey) {
+    const spDcCookie = spdcKey
+
+    const { accessToken } = await buddyList.getWebAccessToken(spDcCookie)
+    const friendActivity = await buddyList.getFriendActivity(accessToken)
+    // console.log(JSON.stringify(friendActivity, null, 2))
+    return JSON.stringify(friendActivity, null, 2)
+}
