@@ -24,7 +24,7 @@ app.get('/getmusic', async (req, res) => {
 
 
 app.listen(port, function() {
-    console.log(`Running on local host at port ${port}`)
+    console.log(`Running on https://localhost:${port}`)
 })
 
 // HELPER FUCNTIONS
