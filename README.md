@@ -8,7 +8,7 @@ Create a branch from dev with the feature name, make a PR to dev. PRs to main wi
 make sure u have node version > 18
 
 FEATURE BRANCH -> DEV BRANCH -> MAIN
-
+ 
 run git pull origin main
 Run npm install in the root directory
 npm run start to run server (default port 3000)
