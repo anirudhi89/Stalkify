@@ -49,7 +49,9 @@ From the root of the repository, run: `npm install` then `npm run dev`.
 This should open up Stalkify in your browser; if not, navigate to [https://localhost:3000](https://localhost:3000/).
 
 
-## Contributing Guidelines
+## Contribution Guidelines
+
+NOTE: As this is for a class project, at this time, we are not accepting PRs from any others. After May 23, this project will be open to all.
 
 - Checkout the `main`, branch: `git checkout main`
 - Checkout the `dev`, branch: `git checkout dev`
