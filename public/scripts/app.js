@@ -13,12 +13,17 @@ submitBtn.addEventListener("click", () => {
     .then(data => {
         console.log(data);
         console.log(Object.keys(data.friends).length);
-        displayBox.innerText = data.friends[Object.keys(data.friends).length-1].user.name;
-        displayBox.innerText += data.friends[Object.keys(data.friends).length-1].track.name;
+        for (let i = 0; i < Object.keys(data.friends).length; i++) {
+            displayBox.innerText += data.friends[i].user.name;
+            displayBox.innerText += " is listening to: ";
+            displayBox.innerText += " ";
+            displayBox.innerText += data.friends[i].track.name;
+            displayBox.innerText += "\n";
+        }
     })
     .catch(error => {
         console.error(error);
-        displayBox.innerText = "An error occurred while fetching data.";
+        displayBox.innerText = "An error occurred while fetching data. Check if your sp_dc key is correct";
     });
 
 });
