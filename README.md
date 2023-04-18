@@ -72,6 +72,7 @@ Retrieve your Spotify sp_dc key by:
 - Navigate to the `Application` section at the top.
 - Underneath cookies, click on open.spotify.com
 - Find `sp_dc` cookie, and copy it's value (not the url-encoded value).
+- Close the window without logging out (Otherwise the cookies are made invalid).
 
 ## Tech Stack
 
