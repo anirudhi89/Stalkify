@@ -15,7 +15,7 @@ h1 {
 	font-size: 36px;
 }
 
-.container {
+.main {
 	background-color: #282828;
 	padding: 20px;
 	margin: 50px auto;
@@ -57,4 +57,8 @@ button:hover {
 	border-radius: 3px;
 	height: 200px;
 	overflow-y: auto;
+}
+
+.modal {
+	color: black;
 }
