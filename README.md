@@ -9,7 +9,6 @@ Stalkify is the first of its kind social network dedicated to seeing what your f
 ## Setup:
 1. Choose a terminal.
 
-F
 	1. Windows: Powershell, [Git Bash](https://git-scm.com/downloads) or [WSL](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6)
 
 	2. macOS: Terminal or iTerm2
