@@ -16,8 +16,7 @@ submitBtn.addEventListener("click", () => {
         for (let i = 0; i < Object.keys(data.friends).length; i++) {
             displayBox.innerText += data.friends[i].user.name;
             displayBox.innerText += " is listening to: ";
-            displayBox.innerText += " ";
-            displayBox.innerText += data.friends[i].track.name;
+            displayBox.innerText += " " + data.friends[i].track.name;
             displayBox.innerText += "\n";
         }
     })

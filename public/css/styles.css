@@ -1,3 +1,16 @@
+
+@font-face{
+    font-family: Spotify;
+    src: url('../fonts/Spotify-Font/GothamBold.ttf'), url('../fonts/Spotify-Font/GothamBold.ttf') format('tff');
+}
+/* /* @font-face{
+    font-family: NetflixMD;
+    src: url('../fonts/NetflixSans_W_Md.woff2'), url('../fonts/NetflixSans_W_MD.woff2') format('woff2');
+} */
+
+* {
+	font-family: Spotify;
+}
 body {
 	background-color: #191414;
 	color: #FFFFFF;
@@ -16,7 +29,7 @@ h1 {
 }
 
 .main {
-	background-color: #282828;
+	background-color: #191414;
 	padding: 20px;
 	margin: 50px auto;
 	/* max-width: 600px; */
@@ -46,7 +59,7 @@ button {
 }
 
 button:hover {
-	background-color: #1ED760;
+	background-color: #1DB954;
 }
 
 #display-box {
@@ -61,4 +74,8 @@ button:hover {
 
 .modal {
 	color: black;
+}
+
+.stalkifytitle {
+	font-size: 50px;
 }

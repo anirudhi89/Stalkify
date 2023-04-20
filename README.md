@@ -78,7 +78,7 @@ Retrieve your Spotify sp_dc key by:
 
 ### Server
 
-The server is written in JavaScript and ExpressJs, an unopiniated framework, using the Node.js runtime.
+The server is written in JavaScript and ExpressJs, an unopinionated framework, using the Node.js runtime.
 
   
 
