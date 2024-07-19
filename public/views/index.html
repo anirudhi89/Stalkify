@@ -28,12 +28,14 @@
                     <p>
                         
                         <h3>How to get your <code>sp_dc</code> cookie</h3>
-                        <li>Using Google Chrome, navigate to open.spotify.com, and log in</li>
-                        <li>Press Command + Option + J on Mac, or Control + Shift + J on Windows to open Chrome Developer Tools</li>
-                        <li>Navigate to the `Application` section at the top.</li>
-                        <li>Underneath cookies, click on open.spotify.com</li>
-                        <li>Find <code>sp_dc</code> cookie, and copy it's value (not the url-encoded value)</li>
-                        <li>Close the window without logging out (Otherwise the cookies are made invalid).</li>
+                        <ol>
+                          <li>Using Google Chrome, navigate to open.spotify.com, and log in</li>
+                          <li>Press Command + Option + J on Mac, or Control + Shift + J on Windows to open Chrome Developer Tools</li>
+                          <li>Navigate to the `Application` section at the top.</li>
+                          <li>Underneath cookies, click on open.spotify.com</li>
+                          <li>Find <code>sp_dc</code> cookie, and copy it's value (not the url-encoded value)</li>
+                          <li>Close the window without logging out (Otherwise the cookies are made invalid).</li>
+                        </ol> 
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -61,7 +63,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
         function showModal() {
-            console.log("modal?")
             document.getElementById("myModal").style.display = "block";
         }
         function hideModal() {
